@@ -5,7 +5,8 @@ A small systemd service and script that dumps the current temperature of a Nvidi
 1. Copy `nv-temperature.sh` to `/usr/local/sbin/`.
 2. Make it executable with `chmod +x /usr/local/sbin/nv-temperature.sh`.
 3. Copy `nv-temperature.service` to `/etc/systemd/system/`.
-4. Configure fancontrol and start it.
+4. Enable `nv-temperature` with systemctl with `systemctl enable nv-temperature`.
+5. Configure fancontrol and start it.
 
 ## Sample `/etc/fancontrol`
 ```
