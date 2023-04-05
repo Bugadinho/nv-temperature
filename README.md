@@ -13,7 +13,7 @@ A small systemd service and script that dumps the current temperature of a Nvidi
 INTERVAL=1
 DEVPATH=hwmon0=devices/platform/coretemp.0 hwmon1=devices/platform/nct6775.656
 DEVNAME=hwmon0=coretemp hwmon1=nct6776
-FCTEMPS=hwmon1/pwm1=/tmp/nv-temperature/temperature
+FCTEMPS=hwmon1/pwm1=/tmp/nv-temperature/gpu0
 FCFANS= hwmon1/pwm1=hwmon1/fan1_input
 MINTEMP=hwmon1/pwm1=30
 MAXTEMP=hwmon1/pwm1=80
